@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="160dp"
+            android:layout_height="250dp"
+            android:contentDescription=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_autonomy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Autonomy:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_poster"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_autonomy_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_autonomy"
+            app:layout_constraintTop_toTopOf="@id/tv_autonomy"
+            tools:text="16 Horas" />
+
+        <TextView
+            android:id="@+id/tv_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_autonomy"
+            app:layout_constraintTop_toBottomOf="@id/tv_autonomy"
+            />
+
+        <TextView
+            android:id="@+id/tv_capture_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_capture"
+            app:layout_constraintTop_toBottomOf="@id/tv_autonomy_answer"
+            tools:text="Semi aviva" />
+
+        <TextView
+            android:id="@+id/tv_compatibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compatibility:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_capture"
+            app:layout_constraintTop_toBottomOf="@id/tv_capture"
+            />
+
+        <TextView
+            android:id="@+id/tv_compatibility_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_compatibility"
+            app:layout_constraintTop_toBottomOf="@id/tv_capture_answer"
+            tools:text="Semi aviva" />
+
+        <TextView
+            android:id="@+id/tv_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connection:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_compatibility"
+            app:layout_constraintTop_toBottomOf="@id/tv_compatibility"
+            />
+
+        <TextView
+            android:id="@+id/tv_connection_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_connection"
+            app:layout_constraintTop_toBottomOf="@id/tv_compatibility_answer"
+            tools:text="Bluettoth" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="height:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_connection"
+            app:layout_constraintTop_toBottomOf="@id/tv_connection"
+            />
+
+        <TextView
+            android:id="@+id/tv_height_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_height"
+            app:layout_constraintTop_toBottomOf="@id/tv_connection_answer"
+            tools:text="18,4" />
+
+        <TextView
+            android:id="@+id/tv_modelt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_connection"
+            app:layout_constraintTop_toBottomOf="@id/tv_height"
+            />
+        <TextView
+            android:id="@+id/tv_model_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tv_height"
+            app:layout_constraintTop_toBottomOf="@id/tv_height_answer"
+            tools:text="Headset Bluetooth" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
